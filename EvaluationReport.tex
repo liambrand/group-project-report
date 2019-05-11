@@ -1,0 +1,76 @@
+\documentclass[]{report}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage[numbers]{natbib}
+\usepackage{titlesec}
+
+% Title Page
+\title{Evaluation Report}
+\author{Liam Brand}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\section{The System Produced}
+The overall project aim was to develop a prototype system that involves several sensors monitoring an environment, and then using the data acquired from this for analytics and visualization through an appropriate medium. This section aims to explore the implemented features with regards to how well they were implemented according to various criteria.
+
+	\subsection{Fitness for Purpose}
+	The system meets the overall project aim explained earlier. Several sensors have been successfully developed that take environmental data such as temperature and humidity, and this data is sent to a hosted database that stores these readings. A front end website has been developed and hosted as shown in the product demo, and among other things the website features data visualization which comes in the form of charts providing a visual breakdown of different environmental aspects, as well as elements that display information gained from data analysis such as the temperature being too hot.
+	
+	These elements have been implemented to be near real-time as well, as stored and processed data needs to be up to date for the system to be accurate. Analysing an hour old reading for example might not provide useful information as it's uncertain whether or not this reading represent the environment's current state. The sensors post their readings to the database every 15 seconds, allowing for the database to receive sensory data at a relatively quick pace. As well, XML http requests have been configured to fire every few seconds for relevant data visualization and data analysis methods, ensuring what is displayed or analysed is the most up to date information available.
+	
+	\subsection{Robustness}
+	
+	
+	
+	\subsection{Look and Feel}
+	
+	
+	\subsection{Consistency}
+	
+	
+	\subsection{Technical Evaluation}
+	
+	
+	
+	
+	
+	The ability to monitor a home environment was shown in the live demo, and as well as being implemented it has been implemented in a way that would be useful to the client. The developed sensors post data to the system's database every 15 seconds, allowing the data visualization and data analytics subsystems to be working with current readings. This prevents displayed and processed data from being too old to be of use, as if the sensors only posted every hour any analysis performed after a few minute would be of no value as there is no guarantee the data that was used still accurately reflects the monitored environment.
+	
+	
+	
+	
+	
+	% evaluate implementation of IoT sensors
+	Multiple sensors had to be developed and deployed, and this was well achieved. Two sensors were successfully developed and used for information gathering, with physical proof being present in their functionality during the live demonstration. The sensors' capability to post data to the database every 15 seconds also meant this data was close to real-time and properly usable, as if the sensors only sent data every hour for example the gathered readings would be too out of date to be of any real analytical use. 
+	
+	% evaluate webserver and database
+	
+	% evaluate web application
+	
+	% evaluate data analytics
+	
+	% evaluate short term decision making model
+
+
+\section{Project Management, Process and Personal Achievement}
+\subsection{Requirements Gathering}
+Requirements were gathered through the use of client questionnaires and interviews. Whilst the overall requirements of the system were already known, this allowed us to answer some questions about finer details that came up during the initial planning and distribution of work. I encountered a missed opportunity for some important information with the questionnaires however. An element of my subsystem was using weather data to help gauge whether or not the client's house temperature was comfortable, but it would have been useful to have some input on precisely how this would be done. For example, following an external temperature spike/drop does the client want the heating instantly adjusted or done slowly over a period of time to prevent it feeling uncomfortable? Do they perhaps want to be able to opt out of this small feature due to the potential inconsistency of weather forecasts and simply fine tune their house temperature themselves?
+
+\section{Professional Issues}
+
+
+\section{Legal Issues}
+
+
+\section{Social Issues}
+
+
+\section{Ethical Issues}
+
+	\bibliographystyle{plainnat}
+	\bibliography{papers}
+\end{document}          
