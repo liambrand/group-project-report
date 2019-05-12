@@ -8,6 +8,7 @@
 \usepackage{pdfpages}
 \usepackage{verbatim}
 \usepackage{titling}
+\usepackage{lscape}
 \newcommand{\subtitle}[1]{%
 	\posttitle{%
 		\par\end{center}
@@ -25,7 +26,7 @@
 \maketitle
 
 \section{The System Produced}
-This section aims to explore the implemented features with regards to how well they were implemented according to various criteria.
+The overall project aim was to develop a prototype system that involves several sensors monitoring an environment, and then using the data acquired from this for analytics and visualization through an appropriate medium. This section aims to explore the implemented features with regards to how well they were implemented according to various criteria.
 
 	\subsection{Fitness for Purpose}
 	Subsystems were successfully implemented to meet the overall project goal outlined earlier. Two sensors were developed that posted data to a database, and a front end containing appropriate functionality for data visualization and analysis was created as well. The visualization and analysis subsystems were also made capable of communication with both devices, allowing the system to communicate with multiple environmental sensors. The physical demo was proof of the product's functionality.
@@ -107,6 +108,10 @@ Should the product be deployed this policy will need to continue to be adhered t
 		\includepdf[pages=-]{EconomicModel.pdf}
 		\chapter{Wireframes}
 		\includepdf[pages=-, landscape=true]{wireframes.pdf}
+		\chapter{Infrastructure Diagram}
+		\includegraphics{awsmodel.png}
+		\chapter{Terms of Reference}
+		\includepdf[pages=-]{tor.pdf}
 		\chapter{Meeting Minutes}
 		\includepdf[pages=-]{meetingminutes.pdf}
 	\end{appendices}
