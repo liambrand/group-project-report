@@ -34,12 +34,6 @@ The overall project aim was to develop a prototype system that involves several 
 	
 	Adherence to industry standards was also achieved where possible. For example, the model features an ability to inform users of problematic temperature differences between sensors. When discussing temperature differences between rooms, IBACOS - a strategic partner of the US Department of Energy - notes that "Room-to-room temperature differences or floor-to-floor temperature differences should be no greater than 4°F in the heating season"\cite{burdick2011advanced}. The model therefore used this as a guide for its temperature difference threshold, but unknowns such as the temperature location, potential for sensory noise and use of only one sensor rather than one for each room, so the threshold was increased to four degrees celsius to accommodate for these aspects.
 	
-	%During their investigation of a heating system, IBACOS notes\cite{thermalcomfortibacos} that the ACCA (Air Conditioning Contractors of America) has a standard of no more than four degrees fahrenheit (almost two and a half celsius) difference between rooms. This standard was used for their experiments in determining how viable their heating system was, and indeed is recognized by the wider industry. @techreport{thermalcomfortibacos,
-	%title={Thermal Comfort Performance},
-	%institution={Integrated Building and Construction Solutions},
-	%note={Available at: \url{https://cdn.ymaws.com/www.nibs.org/resource/resmgr/BEST/BEST1_045.pdf} (Accessed 01/05/19)}
-	%}
-	
 	\subsection{Robustness}
 	AWS Lambda is used, which features functionality to allow scaling\cite{awslambdadocs} allowing the database to cope with additional device implementations. The devices themselves have features to cope with failures. It features two temperatures sensors with the second one being used if the first one fails, features in code to prevent erroneous measurements. As well, the devices will automatically attempt to reestablish internet connection upon being disconnected, and they also feature a 32GB Micro-SD card as temporary storage for readings data should connection be lost. Web elements such as the model's code contains try/catch statements to handle exceptions such as empty readings from the database as well, and will print appropriate messages to the console to assist in troubleshooting should these issues occur.
 	
@@ -55,12 +49,7 @@ The overall project aim was to develop a prototype system that involves several 
 	Regarding code quality, code featured appropriate comments, indentations and method/variable names to maximize code readability. Proper functional decomposition was done where appropriate as well. For example in the model, part of determining an ideal temperature was to look at temperature readings from the same time for previous days. For this, timestamps needed to be created so readings made around these times could be searched for and retrieved. Creation of these timestamps was initially done in the \textit{checkTemperature} method, but it was later turned into a \textit{getPreviousTimestamps} helper function to maximize readability and group together relevant code.
 	
 	\subsection{Non-Functional Requirements}
-	Primary non-functional requirements concerned the webapp's usability and the appropriate rate at which data was retrieved from the sensors and processed. These aspects have already been covered in previous sections. There is also a requirement for the development of an economic model to help cost the intelligent model, which can be found in the appendices.
-	
-	%\subsection{Financial Breakdown}
-	%As part of the model's development, the system's implementation needs to be financially evaluated to determine the cost of its deployment on an industrial level. The Terms of Reference outlines the project's main finances, but here will be a more in depth exploration of the financial aspects behind the model specifically.
-	%If the model was to continue being used in its current form
-	%\cite{awsp2instancedocs}
+	Primary non-functional requirements concerned the webapp's usability and the appropriate rate at which data was retrieved from the sensors and processed. These aspects have already been covered in previous sections. There is also a requirement for the development of an economic model to help cost the intelligent model, which can be viewed in Appendix B.
 
 \section{Project Management, Process and Personal Achievement}
 	\subsection{Terms of Reference}
@@ -75,7 +64,7 @@ The overall project aim was to develop a prototype system that involves several 
 	Most time objectives were met, with development concluding in April as shown by the meeting minutes' satisfaction of a live end to end product by March. Development primarily finished mid April however rather than the start of April, so a more thorough understanding of task complexity and needed development time is required. The plan was however, for the most part, stuck to well.
 	
 	\subsection{Configuration Management and Integration Strategies}
-	Both configuration and integration was primarily managed through the use of version control. A global repository was created with each group member added as a collaborator, and changes were committed and pushed to their own branches where appropriate. These branches were reviewed to determine their compatibility with existing code and merged into the master branch after. This ensured that all written code fit together without breaking other elements, and also provided a global repository accessible by each group member for the project's source code. Integration of subsystems was also discussed during meetings, for example the meeting on the 25th of March features an end to end demo utilizing all subsystems together as an objective.
+	Both configuration and integration was primarily managed through the use of version control. A global repository was created with each group member added as a collaborator, and changes were committed and pushed to their own branches where appropriate. These branches were reviewed to determine their compatibility with existing code and merged into the master branch after. This ensured that all written code fit together without breaking other elements, and also provided a global repository accessible by each group member for the project's source code. Appendix A shows the repository's commit log. in the appendices Integration of subsystems was also discussed during meetings, for example the meeting on the 25th of March features an end to end demo utilizing all subsystems together as an objective.
 	
 	\subsection{Testing Strategies}
 	Use of the project during code merges on git ensured that code updates didn't break the project, and a live end to end demo was conducted prior to the demonstration to ensure all features worked. A more thorough style of integration testing with a sophisticated testing plan would have been better however, and unit tests for specific code elements would have helped ensure system stability.
@@ -88,15 +77,9 @@ The overall project aim was to develop a prototype system that involves several 
 	
 	\subsection{Potential Additional Functionality}
 	As of right now the visualization and analysis subsystems are hard coded to only retrieve data from the two created devices, moving forward this should be made more dynamic to accommodate for additional created devices to allow these subsystems to function properly as more devices are added. In addition, the data visualization could be scaled up to display data from longer periods of time (e.g. months or years). Also, the data analysis is limited in what it does with the information it learns. For example if gas or an extremely high temperature is detected in a reading this manifests through website alerts, but a fully realised product could notify the appropriate services automatically to help the user. Important notifications could also be harder to miss, sending them to the users phone as a regular mobile notification. These aspects may have been achievable with better time management.
-	
-	%The model could also record discrepancies and log them to a file, and potentially automatically submit timestamps and anomalous readings to the user's energy provider to help open a support ticket to resolve these issues.
-	
+
 	\subsection{Problems Encountered, Their Solutions, and Lessons Learned}
 	Better time management could have been achieved from sticking to the project plan, in future more attention will be paid to these time plans to prevent falling behind too much. Also, a better idea of whether or not to have a leader will allow more discipline in sticking to self imposed deadlined, so in future it would be better to explicitly discuss whether or not the group will have a leader and if so, who it is.
-	
-
-%\subsection{Requirements Gathering}
-%Requirements were gathered through the use of client questionnaires and interviews. Whilst the overall requirements of the system were already known, this allowed us to answer some questions about finer details that came up during the initial planning and distribution of work. I encountered a missed opportunity for some important information with the questionnaires however. An element of my subsystem was using weather data to help gauge whether or not the client's house temperature was comfortable, but it would have been useful to have some input on precisely how this would be done. For example, following an external temperature spike/drop does the client want the heating instantly adjusted or done slowly over a period of time to prevent it feeling uncomfortable? Do they perhaps want to be able to opt out of this small feature due to the potential inconsistency of weather forecasts and simply fine tune their house temperature themselves?
 
 \section{Professional Issues}
 The Code of Conduct was adhered to with good collaboration between teammates, as each member showed up to the group meetings and gave fair warning if other commitments would cause them to be late. Members were polite whilst still offering fair criticism. Moving forward these standards would need to be strictly adhered to, as insufficient communication between team members could cause project issues that directly affect clients causing a loss of faith in the company and as such the developed product.
@@ -121,8 +104,13 @@ Should the product be deployed this policy will need to continue to be adhered t
 	\bibliography{papers}
 	\newpage
 	\begin{appendices}
+		\chapter{Git Log}
 		\verbatiminput{log.txt}
+		\chapter{Economic Model}
+		\includepdf[pages=-]{EconomicModel.pdf}
+		\chapter{Terms of Reference}
 		\includepdf[pages=-]{tor.pdf}
+		\chapter{Meeting Minutes}
 		\includepdf[pages=-]{meetingminutes.pdf}
 	\end{appendices}
 \end{document}          
