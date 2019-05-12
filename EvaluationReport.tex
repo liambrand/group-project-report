@@ -4,6 +4,9 @@
 \usepackage{amsmath,amssymb}
 \usepackage[numbers]{natbib}
 \usepackage{titlesec}
+\usepackage{appendix}
+\usepackage{pdfpages}
+\usepackage{verbatim}
 
 % Title Page
 \title{Evaluation Report}
@@ -22,8 +25,6 @@ The overall project aim was to develop a prototype system that involves several 
 	
 	As well, these elements have been implemented to be near real-time, as stored and processed data needs to be up to date for the system to be accurate. Analysing an hour old reading for example might not provide useful information as it's uncertain whether or not this reading represent the environment's current state. The sensors post their readings to the database every 15 seconds, allowing for the database to receive sensory data at a relatively quick pace. As well, XML http requests have been configured to fire every few seconds for relevant data visualization and data analysis methods, ensuring what is displayed or analysed is the most up to date information available and provides the most value to the user.
 	
-	As of right now the visualization and analysis subsystems are hard coded to only retrieve data from the two created devices, moving forward this should be made more dynamic to accommodate for additional created devices to allow these subsystems to function properly as more devices are added. In addition, the data visualization could be scaled up to display data from longer periods of time (e.g. months or years). Also, the data analysis is limited in what it does with the information it learns. For example if gas or an extremely high temperature is detected in a reading this manifests through website alerts, but a fully realised product could notify the appropriate services automatically to help the user. Important notifications could also be harder to miss, sending them to the users phone as a regular mobile notification. The model could also record discrepancies and log them to a file, and potentially automatically submit timestamps and anomalous readings to the user's energy provider to help open a support ticket to resolve these issues.
-	
 	\subsection{Robustness}
 	AWS Lambda is used, which features functionality to allow scaling\cite{awslambdadocs} allowing the database to cope with additional device implementations. The devices themselves have features to cope with failures. It features two temperatures sensors with the second one being used if the first one fails, features in code to prevent erroneous measurements. As well, the devices will automatically attempt to reestablish internet connection upon being disconnected, and they also feature a 32GB Micro-SD card as temporary storage for readings data should connection be lost. Web elements such as the model's code contains try/catch statements to handle exceptions such as empty readings from the database as well, and will print appropriate messages to the console to assist in troubleshooting should these issues occur.
 	
@@ -39,19 +40,45 @@ The overall project aim was to develop a prototype system that involves several 
 	With regards to code quality, code featured appropriate comments, indentations and method/variable names to maximize code readability. Proper functional decomposition was done where appropriate as well. For example in the model, one aspect of determining an ideal temperature was to look at temperature readings from the same time for previous days. To do this, timestamps needed to be created so readings retrieved around these times could be searched for and retrieved. The creation of these timestamps was initially done in the \textit{checkTemperature} method, but it was later turned into a \textit{getPreviousTimestamps} helper function to maximize readability and group together relevant code.
 	
 	\subsection{Non-Functional Requirements}
-	The primary non-functional requirements concerned the usability of the webapp and the appropriate rate at which data was retrieved and processed from the sensors, and these aspects have already been covered in previous sections.
+	The primary non-functional requirements concerned the usability of the webapp and the appropriate rate at which data was retrieved and processed from the sensors, and these aspects have already been covered in previous sections. There is also a requirement for the development of an economic model to help cost the intelligent model, that can be found in the appendices.
 	
-	\subsection{Financial Breakdown}
-	As part of the model's development, the system's implementation needs to be financially evaluated to determine the cost of its deployment on an industrial level. The Terms of Reference outlines the project's main finances, but here will be a more in depth exploration of the financial aspects behind the model specifically.
-	
-	If the model was to continue being used in its current form
-	
-	\cite{awsp2instancedocs}
+	%\subsection{Financial Breakdown}
+	%As part of the model's development, the system's implementation needs to be financially evaluated to determine the cost of its deployment on an industrial level. The Terms of Reference outlines the project's main finances, but here will be a more in depth exploration of the financial aspects behind the model specifically.
+	%If the model was to continue being used in its current form
+	%\cite{awsp2instancedocs}
 
 
 \section{Project Management, Process and Personal Achievement}
+	\subsection{Terms of Reference}
+	% what worked well, what worked less successfully?
+	% how did it help us to build the system?
+	
+	\subsection{Requirements and Design Documentation}
+	% design documentation? was it useful?
+	
+	\subsection{Time Management}
+	% how group's doing for time. aer we on schedule, did we use our plan?
+	
+	\subsection{Configuration Management}
+	% 
+	
+	\subsection{Configuration Strategies}
+	% 
+	
+	\subsection{Testing Strategies}
+	% primarily unit and integration tests, unit tests would have been good
+	
+	\subsection{Group Leadership}
+	
+	\subsection{Quality Planning}
+	
+	\subsection{Potential Additional Functionality}
+	As of right now the visualization and analysis subsystems are hard coded to only retrieve data from the two created devices, moving forward this should be made more dynamic to accommodate for additional created devices to allow these subsystems to function properly as more devices are added. In addition, the data visualization could be scaled up to display data from longer periods of time (e.g. months or years). Also, the data analysis is limited in what it does with the information it learns. For example if gas or an extremely high temperature is detected in a reading this manifests through website alerts, but a fully realised product could notify the appropriate services automatically to help the user. Important notifications could also be harder to miss, sending them to the users phone as a regular mobile notification. The model could also record discrepancies and log them to a file, and potentially automatically submit timestamps and anomalous readings to the user's energy provider to help open a support ticket to resolve these issues.
+	
+	\subsection{Problems Encountered, Their Solutions, and Lessons Learned}
+
 \subsection{Requirements Gathering}
-Requirements were gathered through the use of client questionnaires and interviews. Whilst the overall requirements of the system were already known, this allowed us to answer some questions about finer details that came up during the initial planning and distribution of work. I encountered a missed opportunity for some important information with the questionnaires however. An element of my subsystem was using weather data to help gauge whether or not the client's house temperature was comfortable, but it would have been useful to have some input on precisely how this would be done. For example, following an external temperature spike/drop does the client want the heating instantly adjusted or done slowly over a period of time to prevent it feeling uncomfortable? Do they perhaps want to be able to opt out of this small feature due to the potential inconsistency of weather forecasts and simply fine tune their house temperature themselves?
+%Requirements were gathered through the use of client questionnaires and interviews. Whilst the overall requirements of the system were already known, this allowed us to answer some questions about finer details that came up during the initial planning and distribution of work. I encountered a missed opportunity for some important information with the questionnaires however. An element of my subsystem was using weather data to help gauge whether or not the client's house temperature was comfortable, but it would have been useful to have some input on precisely how this would be done. For example, following an external temperature spike/drop does the client want the heating instantly adjusted or done slowly over a period of time to prevent it feeling uncomfortable? Do they perhaps want to be able to opt out of this small feature due to the potential inconsistency of weather forecasts and simply fine tune their house temperature themselves?
 
 \section{Professional Issues}
 
@@ -66,4 +93,9 @@ Requirements were gathered through the use of client questionnaires and intervie
 
 	\bibliographystyle{plainnat}
 	\bibliography{papers}
+	\newpage
+	\begin{appendices}
+		\verbatiminput{log.txt}
+		\includepdf[pages=-]{tor.pdf}
+	\end{appendices}
 \end{document}          

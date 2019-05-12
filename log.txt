@@ -1,0 +1,459 @@
+commit d722c703c63d1635d68bd3c9464539894c7d72c3
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Thu Apr 25 13:24:08 2019 +0100
+
+    Tweaked gas check
+
+commit c2100a8d493d98e65188924935fd8d04fe981aad
+Author: Jamie <jg.clarke@hotmai.co.uk>
+Date:   Thu Apr 25 13:02:37 2019 +0100
+
+    hardware work final
+
+commit 4e88fbad654ee8a4901b47a9de6f6526d27fd0b4
+Author: Jamie <jg.clarke@hotmai.co.uk>
+Date:   Thu Apr 25 12:56:57 2019 +0100
+
+    final commit!
+
+commit e9c9e37bedc9fcea9f30d7def13166bf45028927
+Merge: 8275392 97545f9
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Thu Apr 25 12:47:07 2019 +0100
+
+    Merge pull request #9 from SnowTurtle96/pass-encryption
+    
+    Pass encryption
+
+commit 827539232911f3a873078a8efe60ddb89b73877f
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Thu Apr 25 10:47:42 2019 +0100
+
+    Fixed gas detection threshold
+
+commit c0dbf5c532cff17205ae22687ed8e4f014fb450f
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Thu Apr 25 10:07:52 2019 +0100
+
+    Added dumb gas method with associated alert
+
+commit 06f762ba3b0f77f3105da2ca33f8bae0e5f9e9ff
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Thu Apr 25 09:48:39 2019 +0100
+
+    Some cleanup
+
+commit 597e531ddeab7d568fad4a1b6baf17017f9a20e8
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Thu Apr 25 09:45:17 2019 +0100
+
+    Added relevant sections for device comparison
+
+commit 7d281cad7ca6c8c3a9cf8cbc950d0906b21500a7
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Thu Apr 25 09:21:13 2019 +0100
+
+    Buffer for device comparison
+
+commit 97545f94580f23e51a0424ae89a761f5729f88d6
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 24 21:07:01 2019 +0100
+
+    Comments
+
+commit 96fe6d0983d07975799b013bae0d86ebad5adbcb
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Wed Apr 24 12:09:46 2019 +0100
+
+    Removed another method stub
+
+commit 80d7b8e6cfcd8d8ea4dc9c719a276106bfe5dcaa
+Merge: 5aa0d7d 69ae270
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Wed Apr 24 12:05:25 2019 +0100
+
+    Merge branch 'master' of https://www.github.com/SnowTurtle96/Group-Project
+
+commit 5aa0d7dade55b69f0a5c1462e83784f1b13be2f8
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Wed Apr 24 12:05:02 2019 +0100
+
+    Removed old method stub
+
+commit 0952571b3f1812b16745b6e7e98a92b11e199517
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Wed Apr 24 11:32:18 2019 +0100
+
+    Added dateFns library
+
+commit 826ae89d7301a16dcf03106f2ba22631b02bba72
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 24 10:59:33 2019 +0100
+
+    Changes - comments required
+
+commit cd589f4765d9673c5c3a78265602220cec79117f
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 24 01:24:23 2019 +0100
+
+    Summary page updates
+
+commit 69ae2702f6a244a422bcce9c5c90a7ebb32e110f
+Merge: db2f8e5 9353b52
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Wed Apr 24 00:57:55 2019 +0100
+
+    Merge pull request #8 from SnowTurtle96/pass-encryption
+    
+    Pass encryption
+
+commit 9353b5263e26dd3d2eeced6caa6ae53fa161c8a5
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Tue Apr 23 23:53:34 2019 +0100
+
+    Updates
+
+commit 31b620a4a4da00b37ee6a9ad74d87d3111b0aab1
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Tue Apr 23 23:43:25 2019 +0100
+
+    CSS updates
+
+commit 1516d424824b8ec2ab9a2f352252071e48d4e450
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Tue Apr 23 23:20:24 2019 +0100
+
+    Delete device added
+
+commit 164e1eb0dc6da3c2c1efc86a71bdffc2211f8bf7
+Merge: 65aa0e0 db2f8e5
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Tue Apr 23 22:50:31 2019 +0100
+
+    Merge branch 'master' into pass-encryption
+
+commit 65aa0e051354d7e6000ac2fbbce55921342e9ff1
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Tue Apr 23 22:37:44 2019 +0100
+
+    Update
+
+commit db2f8e56792db7ace88b856ff3088cdbb24b2c17
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Tue Apr 23 21:35:56 2019 +0100
+
+    Added device comparison
+
+commit 53320775540b6efd39b5647418164938e9210498
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Tue Apr 23 20:04:12 2019 +0100
+
+    Model implemented into respective pages
+
+commit 5525e536f964d8232b2f4fef2feb58cffed66dce
+Merge: ea03845 515a577
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Tue Apr 23 18:42:10 2019 +0100
+
+    Merge pull request #7 from SnowTurtle96/Charts
+    
+    adding all changes to charts, weekly left
+
+commit 515a5772c2a6be1ddd4a640f41dbf71db4229dbc
+Author: ANewby <adam_newby1@hotmail.co.uk>
+Date:   Tue Apr 23 18:38:30 2019 +0100
+
+    adding all changes to charts, weekly left
+
+commit ea0384534b330c57f67b17086faeadde1062bd86
+Author: Student <student@C17775497.offcampusnetwork.co.uk>
+Date:   Tue Apr 23 15:34:12 2019 +0100
+
+    files deleted
+
+commit 11da59995d028142dbebcd9598397618a48464f6
+Merge: 2ea683c 6e37c57
+Author: Student <student@C17775497.offcampusnetwork.co.uk>
+Date:   Tue Apr 23 15:30:13 2019 +0100
+
+    Merge branch 'master' of https://github.com/SnowTurtle96/Group-Project
+
+commit 2ea683cd7b820f3268a6ae0b111beb9394d3b36e
+Author: Student <student@C17775497.offcampusnetwork.co.uk>
+Date:   Tue Apr 23 15:29:38 2019 +0100
+
+    code commented and documentation included
+
+commit 6e37c5763d8a1fdd6cb8966844842166f79aea24
+Merge: fa6480b 2dc4b8c
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Tue Apr 23 00:56:06 2019 +0100
+
+    Merge pull request #6 from SnowTurtle96/pass-encryption
+    
+    Pass encryption
+
+commit 2dc4b8c15e75f3fcba16dfc153e847ec4e27db1e
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Mon Apr 22 22:45:30 2019 +0100
+
+    Tabindex update
+
+commit fa6480be966069a2fe78eb5a9f7145c7677ae4a0
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Mon Apr 22 22:39:14 2019 +0100
+
+    Changed hardcoded user id to 97
+
+commit f2ba6703d4b0c7a91bfd32d39993f6840dacffc2
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Mon Apr 22 22:35:25 2019 +0100
+
+    Encryption complete
+
+commit cfc02ad6d4dcf8fa546ede7d9c78ff898e5a5334
+Merge: 775a714 cdbe33a
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Mon Apr 22 22:21:22 2019 +0100
+
+    Merge pull request #5 from SnowTurtle96/media-queries
+    
+    Media queries
+
+commit cdbe33acfe63fc87fadb21b6d21b559fb19e4b4d
+Merge: 4c70475 775a714
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Mon Apr 22 22:21:07 2019 +0100
+
+    Merge branch 'master' into media-queries
+
+commit 4c70475574e6d07e2ab5b9b3ad94a898fcd57bc5
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Mon Apr 22 11:25:28 2019 +0100
+
+    Update device-entry.php
+
+commit 775a714c4aba00db4228c054c1b03a30713f3d78
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Mon Apr 22 09:43:57 2019 +0100
+
+    Removed example.js file from model
+
+commit 5ef66432bbf19da900ba51899d00236c83988b4a
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Sun Apr 21 15:05:43 2019 +0100
+
+    Incorporated AlertifyJS, prototype device comparison implemented
+
+commit 38831d87b65898dca2296fe217ceeec26c152592
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Sun Apr 21 14:07:42 2019 +0100
+
+    Newer model, changed imports to load jQuery first
+
+commit 888ac6580f45dbe21b30ddb9d0e25bcb424cfc87
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Fri Apr 19 12:16:36 2019 +0100
+
+    Index media query
+
+commit 21a845d0b11aba6a179d5bed441156afd7f9a7c7
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Thu Apr 18 00:05:36 2019 +0100
+
+    Media query prep, model data added (bugs)
+
+commit 66be4147291cb68041db521b4e9998e3ffe1928b
+Merge: 5043823 03fe8ff
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Mon Apr 15 23:51:12 2019 +0100
+
+    Merge pull request #4 from SnowTurtle96/branch-apicall
+    
+    Branch apicall
+
+commit 03fe8ffe231b498d4e8acfe52dacc7db5a37f5d9
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Mon Apr 15 23:47:57 2019 +0100
+
+    Device summary pages
+
+commit 75283e7cab5b6d9389d4ac8829427b266caac99e
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 10 22:10:00 2019 +0100
+
+    Test
+
+commit 97efb58274b2c78bc208bea50acffad4c1657185
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 10 21:43:55 2019 +0100
+
+    Register fix
+
+commit 3666397c002bb328b8cd39a7b7e3ca105b0de92e
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 10 20:49:58 2019 +0100
+
+    Small fixes
+
+commit 525a61c599e1b504a5960910087d730b04e54c35
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 10 16:53:13 2019 +0100
+
+    Added no-devices scenario
+
+commit 6f4eab68c8b35ba284d1709b0b06458315703c4a
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 10 16:43:22 2019 +0100
+
+    apicall fix
+
+commit 5043823dd50f80c7d9fae0940121880f289ab523
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Wed Apr 10 13:49:59 2019 +0100
+
+    Basic model working
+
+commit c56a98297993f9fac9de92603913f2297fae98ba
+Merge: 764706f 998f3a8
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Wed Apr 10 11:47:13 2019 +0100
+
+    Merge pull request #3 from SnowTurtle96/branch-apicall
+    
+    Layout change, api-call issue
+
+commit 998f3a861d61bdf0673fb79dfe88b60de9aba922
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 10 11:44:01 2019 +0100
+
+    Layout change, api-call issue
+
+commit 764706f3c5270b6e65170fef13e52c1e7ef763cc
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Wed Apr 10 11:14:55 2019 +0100
+
+    Moved script includes to header.php
+
+commit 92d46488d5d63eb4eabcee60a25bfc7a70f5b99c
+Author: SARABIRDS <under863@gmail.com>
+Date:   Wed Apr 10 02:11:27 2019 +0100
+
+    initial commit
+
+commit 0c81167490a0035269786dc66ed1e99e419476a1
+Merge: 34bc207 419ab61
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Wed Apr 10 01:00:43 2019 +0100
+
+    Merge pull request #2 from SnowTurtle96/branch-apicall
+    
+    Branch apicall
+
+commit 34bc2076cd62293fc3cf750ff1549d793d300cf5
+Merge: 3945797 6d37c6d
+Author: SnowTurtle96 <jg.clarke@hotmail.co.uk>
+Date:   Wed Apr 10 01:00:23 2019 +0100
+
+    Merge pull request #1 from SnowTurtle96/model
+    
+    Model
+
+commit 3945797b0f5b89bcec6f22fdc6583e70e81a8e4f
+Author: Jamie <jg.clarke@hotmai.co.uk>
+Date:   Wed Apr 10 00:54:36 2019 +0100
+
+    lambdas
+
+commit 419ab619b006aa7cdc4f28f93a820933239e8722
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Wed Apr 10 00:45:11 2019 +0100
+
+    Start of user device calling - broken
+
+commit 9e45e746014855001083f4980e4e755c9fc9a594
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Mon Apr 8 23:11:35 2019 +0100
+
+    Device entry fix
+
+commit 60be8dbbde2454c9fadb8a122b8a7d6d0df18abf
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Mon Apr 8 22:52:44 2019 +0100
+
+    Device creation fix
+
+commit 22bf7c646c9953e108ee8325a36155b95dcd0fbe
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Mon Apr 8 22:21:17 2019 +0100
+
+    Login functionality complete
+
+commit d2b285a4ff59f965f7c57ff3b9190d2a461e52b1
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Mon Apr 8 01:28:28 2019 +0100
+
+    Login validation check
+    
+    To fix
+
+commit c3017e18eb7d6c34b03f8bcd5abd9120969e1676
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Sun Apr 7 23:52:26 2019 +0100
+
+    API for new device, plus form added
+
+commit 5ac1c169450f8bba7e68e3e18cab66737b355d79
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Sun Apr 7 18:44:06 2019 +0100
+
+    API fix
+
+commit a4e14c146c1efb4b8464c6196feec3b3f6ad4d2d
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Sun Apr 7 15:01:08 2019 +0100
+
+    apiCall function updates, addition of login GET
+    
+    To fix
+
+commit 0a73ec96aca445665d81f01cd49b336a97813bdf
+Author: chris-mordue-nu <chris.mordue@northumbria.ac.uk>
+Date:   Fri Apr 5 03:24:21 2019 +0100
+
+    API-Call helper file
+    
+    Almost complete helper file for API call, data passing other than login/return.
+    
+    issue:
+    fname=test&lname=test&email=tst%40test.c&pass=ttt&login=&return=
+
+commit d71ea224d9d4af0cfe0cecd879a990bd9e85f832
+Author: ANewby <adam_newby1@hotmail.co.uk>
+Date:   Thu Apr 4 23:46:24 2019 +0100
+
+    Charts added with two dropdowns
+
+commit 6d37c6d5f8d3655aad54eee13da8ecd118e41cfb
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Thu Apr 4 20:30:35 2019 +0100
+
+    Merged model.js into device-model for now
+
+commit 25798897952dd58808026fabb2bc4fefb46db44e
+Author: liambrand <liam.brand@northumbria.ac.uk>
+Date:   Thu Apr 4 20:16:08 2019 +0100
+
+    Added model files
+
+commit 093b2270a54113ea4514dd034c4c7f5c165e7ddf
+Author: Jamie <jg.clarke@hotmai.co.uk>
+Date:   Thu Apr 4 13:29:10 2019 +0100
+
+    new folder structure, Chris's web work
+
+commit 6d4b051a8121a5e77554fbf1ce1710b5cdcb58ca
+Author: Jamie <jg.clarke@hotmai.co.uk>
+Date:   Tue Apr 2 15:14:19 2019 +0100
+
+    Initial Commit
