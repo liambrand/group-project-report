@@ -9,6 +9,7 @@
 \usepackage{verbatim}
 \usepackage{titling}
 \usepackage{lscape}
+\usepackage{hyperref}
 \newcommand{\subtitle}[1]{%
 	\posttitle{%
 		\par\end{center}
@@ -59,15 +60,15 @@ The overall project aim was to develop a prototype system that involves several 
 	The description of subsystem requirements aided development by providing an understanding of the scope, complexity and methods/technologies that were used for their implementation. For example, the model's specification helped bring up some early questions regarding its possible behavior (e.g. what to do if it's too hot) and this allowed the developer to know what needed to be understood before development could begin. Discussion of the project's testing could have used more depth however, and things like unit testing (and perhaps the respective testing frameworks for the different technologies being used) could have been mentioned.
 	
 	\subsection{Requirements and Design Documentation}
-	Wireframes for the website were created, shown in Appendix C. These helped in understanding how the website would look which helped development, and also allowed the data visualization and model subsystems to understand how their respective information should be output so that it can fit into the created website (e.g. how do we tell the user it's too hot in a way that displays well on the designed page?). A questionnaire was also used with the client
+	For requirements, a questionnaire was used with the client, shown in Appendix E, as well as numerous client meetings to fine tune requirements outlined from initial talks and the questionnaire. This consistent communication allowed for a high level view of the requirements to be understood, followed by understanding the requirements' finer details. Other products on the market were reviewed for some subsystems too, for example as part of preliminary research for the model other smart home devices such as the ecobee4\cite{ecobee4}. This allowed an understanding of what the market already provided as well as suggesting some possible features to make the product more competitive on the marketplace.
 	
-	
+	For design, wireframes for the website were created, shown in Appendix C. These helped in understanding how the website would look which helped development, and also allowed the data visualization and model subsystems to understand how their respective information should be output so that it can fit into the created website (e.g. how do we tell the user it's too hot in a way that displays well on the designed page?).
 	
 	\subsection{Time Management}
 	Most time objectives were met, shown by the meeting minutes' satisfaction of a live end to end product by March. Development primarily finished mid April however rather than the start of April, so a more thorough understanding of task complexity and required development time is needed.
 	
 	\subsection{Configuration Management and Integration Strategies}
-	Configuration and integration was primarily managed through the use of version control. A global repository was created with each group member added as a collaborator, and changes were committed and pushed to their own branches where appropriate. These branches were reviewed to determine their compatibility with existing code and merged into the master branch after. This ensured that all written code fit together without breaking other elements, and also provided a global repository accessible by each group member for the project's source code. Appendix A shows an excerpt of a gitlog, showing some of the commits, pull requests, and merges done to build the website. 
+	Configuration and integration was primarily managed through the use of version control. A global repository was created with each group member added as a collaborator, and changes were committed and pushed to their own branches where appropriate. These branches were reviewed to determine their compatibility with existing code and merged into the master branch after. This ensured that all written code fit together without breaking other elements, and also provided a global repository accessible by each group member for the project's source code. Appendix A shows an excerpt of a git log, showing some of the commits, pull requests, and merges done to build the website. 
 	
 	Integration of subsystems was also discussed during meetings, for example the meeting on the 25th of March features an end to end prototype utilizing basic subsystem functionalities together. This enabled smaller iterative integrations rather than connecting everything all at once at the end and risking subsystems interfering with and breaking eachother.
 	
@@ -109,18 +110,25 @@ Should the product be deployed this policy will need to continue to be adhered t
 	\newpage
 	\begin{appendices}
 		\chapter{Git Log}
+		\label{appendix:gitlog}
 		\verbatiminput{log.txt}
 		\chapter{Economic Model}
+		\label{appendix:economicmodel}
 		\includepdf[pages=-]{EconomicModel.pdf}
 		\chapter{Wireframes}
+		\label{appendix:wireframes}
 		\includepdf[pages=-, landscape=true]{wireframes.pdf}
 		\chapter{Infrastructure Diagram}
+		\label{appendix:infrastructurediagram}
 		\includegraphics{awsmodel.png}
 		\chapter{Client Questionnaire}
+		\label{appendix:questionnaire}
 		\includepdf[pages=-]{HUSEYIN-questionnaire.pdf}
 		\chapter{Terms of Reference}
+		\label{appendix:tor}
 		\includepdf[pages=-]{tor.pdf}
 		\chapter{Meeting Minutes}
+		\label{appendix:meetingsMinutes}
 		\includepdf[pages=-]{meetingminutes.pdf}
 	\end{appendices}
 \end{document}          
